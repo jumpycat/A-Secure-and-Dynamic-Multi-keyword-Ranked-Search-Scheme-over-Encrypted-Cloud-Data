@@ -1,0 +1,24 @@
+
+
+Our algorithm is realized with MFC & opencv, so, before running the codes, please install opencv in the attached files.
+
+Next, the instruction will be written in Chinese.
+
+1、MFC程序运行后的界面有如下几个输入项：
+
+    （1）choose a dataset选择一个数据集，也就是所谓的文档集。要注意，我们实验时所用的文档已经过关键词提取处理，每一个txt文件代表的是原始文件中提取的关键词和其相应的单位化了的TF值，比如“host 0.576555518227207”代表关键词host的TF值。
+
+    （2）top-k表示返回的文件数，自己设定。
+
+    （3）input keywords输入关键词，以空格区分。这里的关键词根据（1）中输入的文档集定
+
+2、点击start之后便可得到搜索结果，主要包括
+
+    （1）search time搜索时间
+
+    （2）index construction time索引构建时间。
+
+    （3）trapdoor generation time陷门生成时间
+
+
+*注：为了能够快速运行搜索，目前这个版本并没有使用矩阵加密，即矩阵和向量相乘。如果想要使用矩阵，可以取消代码中一些注释的部分，或自己添加代码。
